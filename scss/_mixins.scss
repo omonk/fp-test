@@ -1,0 +1,35 @@
+// mixins
+
+// here we can define all the project breakpoints
+@mixin breakpoint($breakpoint) {
+
+    @if $breakpoint == 'isPhone' {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == 'isTabletPortTrait' {
+        @media (min-width: 768px) { //iPad Portrait and up
+            @content;
+        }
+    }
+
+    @if $breakpoint == 'isTabletLandscapeUp' {
+        @media (max-width: 1024px) { //iPad Portrait and up
+            @content;
+        }
+    }
+
+    @if $breakpoint == 'isTabletLandscapeDown' {
+        @media (max-width: 1024px) { //iPad Portrait and up
+            @content;
+        }
+    }
+
+    @if $breakpoint == 'isDesktop' {
+        @media (min-width: 1025px) {
+            @content;
+        }
+    }
+}

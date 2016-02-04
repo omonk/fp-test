@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Ollie Monk - Future Platforms</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<div class="row cf">
+    <!-- offcanvas toggle -->
+    <button class="toggle-panel"></button>
+
+    <div class="off-canvas-container" id="scotch-panel">
+        <a class="nav-link" href="#">Temperature</a>
+        <a class="nav-link" href="#">Conditions</a>
+        <a class="nav-link" href="#">Wind Speed</a>
+    </div>
+
+
+    <h1 class="ta-c td-u">Welcome!</h1>
+
+    <!-- nav -->
+    <div class="nav cf">
+        <a class="nav-link" href="#temp">Temperature</a>
+        <a class="nav-link" href="#cond">Conditions</a>
+        <a class="nav-link" href="#wind">Wind Speed</a>
+    </div>
+
+    <!-- map -->
+    <div id="map"></div>
+
+    <!-- weather -->
+    <div class="items-wrapper">
+        <div id="temp" class="block weather-block"></div>
+        <div id="cond" class="block weather-block"></div>
+        <div id="wind" class="block weather-block"></div>
+
+        <!-- videos -->
+        <div class="block">
+            <video src="media/video/01.mp4" controls="controls"></video>
+        </div>
+        <div class="block">
+            <video src="media/video/02.mp4" controls="controls"></video>
+        </div>
+        <div class="block">
+            <video src="media/video/03.mp4" controls="controls"></video>
+        </div>
+    </div>
+
+</div>
+<script src="https://maps.googleapis.com/maps/api/js" charset="utf-8"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/gmaps.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/scotchPanels.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
