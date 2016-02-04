@@ -15,14 +15,8 @@
         }
     }
 
-    @if $breakpoint == 'isTabletLandscapeUp' {
-        @media (max-width: 1024px) { //iPad Portrait and up
-            @content;
-        }
-    }
-
     @if $breakpoint == 'isTabletLandscapeDown' {
-        @media (max-width: 1024px) { //iPad Portrait and up
+        @media (max-width: 1024px) { //iPad Landscape and down
             @content;
         }
     }
