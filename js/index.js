@@ -11,7 +11,6 @@ $(document).ready(function() {
     });
 
     $('.toggle-panel').click(function() {
-        console.log('fired');
         easyPanel.toggle();
         return false;
     });
@@ -42,7 +41,6 @@ $(document).ready(function() {
             var temp = data.main.temp; // get temp
             temp = Math.ceil(temp)
 
-
             var cond = data.weather; // get conditions
             var desc = cond[0].description; // take descriptions from condtions
 
@@ -59,7 +57,7 @@ $(document).ready(function() {
 
 
 // I had some trouble working out how to get the event listeners working
-// with the video tags... :( 
+// with the video tags... :(
 function getVideos() {
     var videos = document.getElementsByTagName('video');
     console.log(videos);
